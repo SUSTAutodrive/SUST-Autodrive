@@ -23,7 +23,7 @@ export default function Home() {
         style={{ width: "100%", height: "100vh", overflow: "hidden" }}
       >
         <video
-          src="/images/semulation.mp4"
+          src="/images/v1.mp4"
           style={{ width: "100%", height: "100vh", objectFit: "cover" }}
           alt="Car"
           autoPlay
