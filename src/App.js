@@ -11,7 +11,14 @@ import Updates from "./pages/Updates";
 
 function App() {
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={{
+        backgroundImage:
+          "url('/Background/zip/gradient-network-connection-background/5065282.jpg')",
+        backgroundRepeat: "repeat",
+      }}
+    >
       <Router>
         <Navbar />
         <Routes>

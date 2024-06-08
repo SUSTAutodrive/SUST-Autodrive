@@ -3,9 +3,10 @@ import { Facebook, Twitter, Send, Linkedin, AtSign } from "react-feather";
 export default function Footer() {
   return (
     <div>
-      <div className="container my-5  text-black ">
+      <div className="container mt-5 pb-4  text-light ">
         <footer
-          className="text-center   "
+          className="text-center"
+
           // eslint-disable-next-line react/style-prop-object
           //   style={"background-color: #3f51b5"}
         >
@@ -55,12 +56,10 @@ export default function Footer() {
             <section className="mb-5">
               <div className="row d-flex justify-content-center">
                 <div className="col-lg-8">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sunt distinctio earum repellat quaerat voluptatibus placeat
-                    nam, commodi optio pariatur est quia magnam eum harum
-                    corrupti dicta, aliquam sequi voluptate quas.
-                  </p>
+                  <h5>
+                    Our mission is to make an auto car for you that will not
+                    need a driver.
+                  </h5>
                 </div>
               </div>
             </section>
@@ -92,8 +91,8 @@ export default function Footer() {
             // eslint-disable-next-line react/style-prop-object
             // style="background-color: rgba(0, 0, 0, 0.2)"
           >
-            © 2020 Copyright:
-            <a href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            © 2024 Copyright:
+            <a href="https://mdbootstrap.com/">Md. Mahabub</a>
           </div>
         </footer>
       </div>

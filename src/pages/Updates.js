@@ -16,7 +16,7 @@ export default function Updates() {
       {/* 1/2 */}
       <div className="px-3 d-block d-lg-flex gap-3">
         <div className="card text-bg-dark mt-3" style={{ width: "100%" }}>
-          <h2 className="ps-4 pt-3 pb-2">Integrating A* with Dubin</h2>
+          <h2 className="ps-4 pt-3 pb-2">Integrating AI with Dubin</h2>
           <video
             src="/images/v1.mp4"
             style={{ width: "100%" }}

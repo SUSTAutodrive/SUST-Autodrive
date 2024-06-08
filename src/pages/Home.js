@@ -16,11 +16,17 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div className="mx-3">
       {/* Static Background Section */}
       <div
         className="card text-bg-dark"
-        style={{ width: "100%", height: "100vh", overflow: "hidden" }}
+        style={{
+          width: "100%",
+          height: "100vh",
+          overflow: "hidden",
+          border: "5px solid #7070708a",
+          borderRadius: "10px",
+        }}
       >
         <video
           src="/images/v1.mp4"
@@ -32,8 +38,8 @@ export default function Home() {
         />
         <div className="card-img-overlay">
           <div className="runningMission">
-            <div className="orm">Our upcoming Mission</div>
-            <div className="adc">Auto drive car</div>
+            <div className="orm">Our Running Work</div>
+            <div className="adc">Integrating AI with Dubin</div>
             <Link to="/detailsRunMis">
               {" "}
               {/* Use Link to navigate to About page */}
@@ -48,13 +54,18 @@ export default function Home() {
       {/* Carousel Section 1 */}
       <div
         id="carouselExampleRide"
-        className="carousel slide"
+        className="carousel slide mt-3"
         data-bs-ride="carousel"
         data-bs-interval="4000" // Set the interval to 4000 milliseconds (4 seconds)
-        data-bs-pause="false" // Continue sliding on hover
+        data-bs-pause="false"
+        style={{
+          border: "5px solid #7070708a",
+          borderRadius: "10px",
+          overflow: "hidden",
+        }} // Continue sliding on hover
       >
         <div className="carousel-inner">
-          {["car.avif", "car.avif", "car.avif"].map((image, index) => (
+          {["3Dmap1.png", "3Dmap2.png", "3Dmap3.png"].map((image, index) => (
             <div
               key={index}
               className={`carousel-item ${index === 0 ? "active" : ""}`}
@@ -70,8 +81,8 @@ export default function Home() {
           ))}
           <div className="card-img-overlay">
             <div className="up">
-              <div className="orm">Our upcoming Mission</div>
-              <div className="adc">Auto drive car</div>
+              <div className="orm">Our Recent Work</div>
+              <div className="adc">Town 3D map</div>
               <Link to="/detailsUpMis">
                 {" "}
                 {/* Use Link to navigate to About page */}
@@ -111,10 +122,15 @@ export default function Home() {
       {/* Carousel Section 2 */}
       <div
         id="carouselExampleCaptions"
-        className="carousel slide carousel-fade"
+        className="carousel slide carousel-fade mt-3"
         data-bs-ride="carousel"
         data-bs-interval="5000" // Set the interval to 5000 milliseconds (5 seconds)
         data-bs-pause="false" // Continue sliding on hover
+        style={{
+          border: "5px solid #7070708a",
+          borderRadius: "10px",
+          overflow: "hidden",
+        }}
       >
         <div className="carousel-indicators">
           {[0, 1, 2].map((index) => (
@@ -130,25 +146,33 @@ export default function Home() {
           ))}
         </div>
         <div className="carousel-inner">
-          {["car.avif", "RRR.jpg", "car.avif"].map((image, index) => (
+          {["v6.mp4", "v9.mp4", "v14.mp4"].map((image, index) => (
             <div
               key={index}
               className={`carousel-item ${index === 0 ? "active" : ""}`}
               style={{ width: "100%", height: "100vh", overflow: "hidden" }}
             >
-              <img
+              {/* <img
                 style={{ width: "100%", height: "100vh", objectFit: "cover" }}
                 src={`/images/${image}`}
                 className="d-block w-100"
                 alt="Car"
-              />
+              /> */}
+              <video
+                style={{ width: "100%", height: "100vh", objectFit: "cover" }}
+                src={`/images/${image}`}
+                className="d-block w-100"
+                alt="Car"
+                autoPlay
+                muted
+              ></video>
               <div className="card-img-overlay">
                 <div className="carousel-caption d-none d-md-block">
                   <Link
-                    to="/detailsUpMis"
+                    to="/updates"
                     style={{ cursor: "pointer", color: "white" }}
                   >
-                    <h3>Our Previous missions</h3>
+                    <h3>Our Previous Works</h3>
                   </Link>
                 </div>
               </div>
