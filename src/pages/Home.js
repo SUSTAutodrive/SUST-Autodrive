@@ -16,7 +16,7 @@ export default function Home() {
   };
 
   return (
-    <div className="mx-3">
+    <div className="">
       {/* Static Background Section */}
       <div
         className="card text-bg-dark"
