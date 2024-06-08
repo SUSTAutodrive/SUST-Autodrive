@@ -1,0 +1,97 @@
+.runningMission {
+  position: absolute;
+  bottom: 100px;
+  left: 60px;
+}
+.runningMission .orm {
+  padding-left: 15px;
+  padding-bottom: 2px;
+  color: white;
+  font-size: 24px;
+  font: bold;
+}
+.runningMission .adc {
+  padding-left: 15px;
+  padding-bottom: 7px;
+  color: white;
+  font-size: 40px;
+  font: bold;
+}
+.runningMission button {
+  margin-left: 16px;
+  color: rgb(255, 255, 255);
+  background-color: #f7b82500;
+  border: 1px solid white;
+  font-size: 24px;
+  width: 190px;
+  padding: 12px 15px;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.up {
+  position: absolute;
+  bottom: 100px;
+  right: 60px;
+}
+.up .orm {
+  padding-left: 15px;
+  padding-bottom: 2px;
+  color: white;
+  font-size: 24px;
+  font: bold;
+  text-align: right;
+}
+.up .adc {
+  padding-left: 15px;
+  padding-bottom: 5px;
+  color: white;
+  font-size: 40px;
+  font: bold;
+}
+.up button {
+  margin-left: 55px;
+  transition: all 0.5s;
+  cursor: pointer;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: #f7b82500;
+  border: 1px solid white;
+  font-size: 24px;
+  width: 190px;
+  padding: 12px 15px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

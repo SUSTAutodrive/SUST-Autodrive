@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import Home from "./pages/Home";
+import DetailsRunMis from "./pages/DetailsRunMis";
+import DetailsUpMis from "./pages/DetailsUpMis";
+import DetailsPreMis from "./pages/DetailsPreMis";
+import About from "./pages/About";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import Updates from "./pages/Updates";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      className="App"
+      style={{
+        backgroundImage:
+          "url('/Background/zip/gradient-network-connection-background/5065282.jpg')",
+        backgroundRepeat: "repeat",
+      }}
+    >
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/detailsRunMis" element={<DetailsRunMis />} />{" "}
+          <Route path="/detailsUpMis" element={<DetailsUpMis />} />{" "}
+          <Route path="/detailsPreMis" element={<DetailsPreMis />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/updates" element={<Updates />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }
