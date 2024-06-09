@@ -17,13 +17,6 @@ export default function Home() {
 
   return (
     <div className="">
-      <div className="">
-        <img
-          src="/images/carE.jpg"
-          style={{ width: "100%", height: "" }}
-          alt="..."
-        />
-      </div>
       {/* Static Background Section */}
       <div
         className="card text-bg-dark"
