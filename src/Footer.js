@@ -2,8 +2,11 @@ import { Facebook, Twitter, Send, Linkedin, AtSign } from "react-feather";
 
 export default function Footer() {
   return (
-    <div>
-      <div className="container mt-5 pb-4  text-light ">
+    <div className=" pb-3">
+      <div
+        className="container mt-3 pb-4  text-light"
+        // style={{ background: " #a0f0ff3d" }}
+      >
         <footer
           className="text-center"
 
@@ -16,6 +19,7 @@ export default function Footer() {
                 <div className="col-md-2">
                   <h6 className="text-uppercase font-weight-bold">
                     <Facebook />
+                    <br />
                     <a href="#!">Facebook</a>
                   </h6>
                 </div>
@@ -31,6 +35,7 @@ export default function Footer() {
                 <div className="col-md-2">
                   <h6 className="text-uppercase font-weight-bold">
                     <Send />
+                    <br />
                     <a href="#!">Telegram</a>
                   </h6>
                 </div>
@@ -45,7 +50,9 @@ export default function Footer() {
 
                 <div className="col-md-2">
                   <h6 className="text-uppercase font-weight-bold">
-                    <AtSign /> <a href="#!">Contacts</a>
+                    <AtSign />
+                    <br />
+                    <a href="#!">Contacts</a>
                   </h6>
                 </div>
               </div>
